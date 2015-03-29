@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\koda\AndroidStudioProjects\Test\app\libs\mysql-connector-java-5.0.8-bin (1).jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7b9bfb6c4e4885660378a9c13330915c321f6cca">
+        <dex dex="C:\Users\koda\AndroidStudioProjects\Test\app\build\intermediates\pre-dexed\debug\mysql-connector-java-5.0.8-bin (1)-e6d3cba4186008d3d06c24043030c4fd9e633892.jar" />
+    </item>
+
+</items>

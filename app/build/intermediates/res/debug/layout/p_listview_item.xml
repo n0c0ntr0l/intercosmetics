@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/codelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countrylabel"
+        android:text="codice prodotto" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country"
+        android:layout_toRightOf="@+id/populationlabel" />
+
+    <TextView
+        android:id="@+id/familylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codelabel"
+        android:text="famiglia" />
+
+    <TextView
+        android:id="@+id/family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_toRightOf="@+id/familylabel" />
+
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/familylabel"
+        android:text="nome" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/family"
+        android:layout_toRightOf="@+id/namelabel" />
+    <TextView
+        android:id="@+id/pricelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namelabel"
+        android:text="prezzo" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/pricelabel"/>
+    <TextView
+        android:id="@+id/quantitylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pricelabel"
+        android:text="quantità"  />
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_toRightOf="@id/quantitylabel"
+        android:hint="inserire quantità"/>
+    <TextView
+        android:id="@+id/discountlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:text="% sconto"/>
+    <EditText
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:layout_toRightOf="@id/discountlabel"
+        android:hint="@string/discount_interval"/>
+    <EditText
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:layout_toRightOf="@id/discount"
+        android:text="%"/>
+    <TextView
+        android:id="@+id/finalpricelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discount"
+        android:text="Prezzo finale"/>
+    <TextView
+        android:id="@+id/finalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discount"
+        android:layout_toRightOf="@id/finalpricelabel"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Inserisci prodotto"
+        android:onClick="insertProduct"/>
+
+</RelativeLayout><!-- From: file:/C:/Users/koda/AndroidStudioProjects/Test/app/src/main/res/layout/p_listview_item.xml -->
