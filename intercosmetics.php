@@ -14,6 +14,11 @@ if (mysqli_connect_errno($con))
 $selector = $_POST['query'];
 $result = mysqli_query($con,$selector);
 
+if(!$result)
+{
+	echo "";
+}
+
 while($row = mysqli_fetch_array($result)){
    
 	echo $row['Password'] . "\n";
